@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+        
+        .text {
+            color: green;
+        }
+        
+        #unique {
+            color: red !important;
+        }
+        /* Change class */
+        div p.span {
+            color: purple;
+        }
+        
+        div > p {
+            font-weight: bold;
+        }
+        
+        p:first-child {
+            text-decoration: underline;
+        }
+        
+        p::first-letter {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="unique">Este es un párrafo único</p>  <!--Dlete class "text"-->
+        <p>Este es otro párrafo</p>
+        <span><p class="span">Párrafo dentro de span</p></span> <!--Create new class-->
+    </div>
+    <p class="text">Párrafo fuera del div</p>
+</body>
+</html>
